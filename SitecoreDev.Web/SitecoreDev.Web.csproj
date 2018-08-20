@@ -153,6 +153,8 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="App_Config\Include\SitecoreDev. CustomFields.config" />
+    <Content Include="App_Config\Include\SitecoreDev.TokenReplacements.config" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -173,6 +175,9 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ComponentsController.cs" />
+    <Compile Include="Custom\Fields\CreditCard.cs" />
+    <Compile Include="Custom\Tokens\ParentPathTokenProcessor.cs" />
+    <Compile Include="Custom\Validators\SsnValidator.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
